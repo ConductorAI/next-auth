@@ -15,4 +15,4 @@
 
 ---
 
-Check out the documentation at [nextjs.authjs.dev](https://nextjs.authjs.dev).
+Check outt the documentation at [nextjs.authjs.dev](https://nextjs.authjs.dev).

@@ -35,6 +35,10 @@ export async function toInternalRequest(
     // Defaults are usually set in the `init` function, but this is needed below
     config.basePath ??= "/auth"
 
+    console.log("req in toInternalRequest", req)
+    console.log("req.url.toString() in toInternalRequest", req.url.toString())
+    console.log("headers", req.headers)
+
     const url = new URL(req.url)
 
     const { action, providerId } = parseActionAndProviderId(

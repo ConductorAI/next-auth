@@ -109,7 +109,7 @@ export async function signOut(
   )
   const callbackUrl = options?.redirectTo ?? headers.get("Referer") ?? "/"
   const body = new URLSearchParams({ callbackUrl })
-  const req = new Request(url, { method: "POST", headers, body })
+  const req = new Request(url, { method: "POST", headers, body }) // this url is off
 
   const res = await Auth(req, { ...config, raw, skipCSRFCheck })
 

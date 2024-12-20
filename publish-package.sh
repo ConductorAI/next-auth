@@ -1,16 +1,18 @@
 #!/bin/bash
 
-# Configuration
-YOURORG="conductorai"
-# PACKAGE_PATH="packages/next-auth"  # Adjust based on which package you're publishing
-PACKAGE_PATH="packages/core"  # Adjust based on which package you're publishing
+# Define packages to publish
+PACKAGES=(
+    "packages/core"
+    "packages/next-auth"
+)
 
 # Colors for output
 GREEN='\033[0;32m'
 RED='\033[0;31m'
+BLUE='\033[0;34m'
 NC='\033[0m' # No Color
 
-echo -e "${GREEN}Starting package publishing process...${NC}"
+echo -e "${GREEN}Starting multi-package publishing process...${NC}"
 
 # Check if NPM token is set
 if [ -z "$NPM_TOKEN" ]; then
@@ -31,29 +33,40 @@ pnpm build
 echo -e "\n${GREEN}Running tests...${NC}"
 pnpm test
 
-# Navigate to package directory
-echo -e "\n${GREEN}Preparing package for publishing...${NC}"
-cd $PACKAGE_PATH
+# Function to publish a package
+publish_package() {
+    local package_path=$1
+    echo -e "\n${BLUE}Publishing package: ${package_path}${NC}"
+    
+    # Navigate to package directory
+    cd $package_path || exit 1
+    
+    # Create temporary .npmrc
+    echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > .npmrc
+    
+    # Backup package.json
+    cp package.json package.json.bak
+    
+    # Read current package info
+    CURRENT_NAME=$(node -p "require('./package.json').name")
+    CURRENT_VERSION=$(node -p "require('./package.json').version")
+    
+    echo -e "Publishing ${CURRENT_NAME}@${CURRENT_VERSION}"
+    
+    # Publish package
+    pnpm publish --no-git-checks --access public
+    
+    # Cleanup
+    rm .npmrc
+    mv package.json.bak package.json
+    
+    # Go back to root
+    cd ../../
+}
 
-# Create temporary .npmrc
-echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > .npmrc
+# Publish each package
+for package in "${PACKAGES[@]}"; do
+    publish_package "$package"
+done
 
-# Update package name in package.json to include your org
-echo -e "\n${GREEN}Updating package.json...${NC}"
-# Backup package.json
-cp package.json package.json.bak
-
-# Read current package name and version
-CURRENT_NAME=$(node -p "require('./package.json').name")
-CURRENT_VERSION=$(node -p "require('./package.json').version")
-
-# Publish package
-echo -e "\n${GREEN}Publishing package...${NC}"
-pnpm publish --no-git-checks --access public
-
-# Cleanup
-rm .npmrc
-mv package.json.bak package.json
-
-echo -e "\n${GREEN}Package published successfully!${NC}"
-echo -e "You can install it with: pnpm add $NEW_NAME@$NEW_VERSION"
+echo -e "\n${GREEN}All packages published successfully!${NC}"

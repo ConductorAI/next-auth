@@ -20,12 +20,36 @@ export async function AuthInternal(
 
   const csrfDisabled = authOptions.skipCSRFCheck === skipCSRFCheck
 
+  console.log("request", request)
+  console.log("url to string", request.url.toString())
+  console.log("url raw", request.url)
+  console.log("happy line in console")
+  console.log("headers", request.headers)
+
+  // THE BUILT VERSION OF THIS IS STALE FOR SOME REASON. MAYBE IT NEEDS A COMMIT????
+
+  // let url = request.url
+  const url = request.url
+
+  // if (request.headers) {
+  //   const detectedHost =
+  //     request.headers["x-forwarded-host"] ?? request.headers["host"]
+  //   const detectedProtocol = request.headers["x-forwarded-proto"] ?? "https"
+  //   const _protocol = detectedProtocol.endsWith(":")
+  //     ? detectedProtocol
+  //     : detectedProtocol + ":"
+
+  //   url = new URL(`${_protocol}//${detectedHost}`)
+  // }
+
+  console.log("url", url)
+
   const { options, cookies } = await init({
     authOptions,
     action,
     providerId,
     // url: request.url, // This is 0.0.0.0 I believe and the source of our issues
-    url: new URL("http://localhost:3000"), // This made clicking sign in _go_ to this url
+    url: url,
     callbackUrl: request.body?.callbackUrl ?? request.query?.callbackUrl,
     csrfToken: request.body?.csrfToken,
     cookies: request.cookies,

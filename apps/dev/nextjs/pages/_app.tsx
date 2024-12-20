@@ -20,7 +20,10 @@ function PagesHeader() {
     <Header
       session={session}
       signIn={
-        <button onClick={() => signIn()} className={styles.buttonPrimary}>
+        <button
+          onClick={() => signIn("google")}
+          className={styles.buttonPrimary}
+        >
           Sign in
         </button>
       }

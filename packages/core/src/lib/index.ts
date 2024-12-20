@@ -24,7 +24,8 @@ export async function AuthInternal(
     authOptions,
     action,
     providerId,
-    url: request.url,
+    // url: request.url, // This is 0.0.0.0 I believe and the source of our issues
+    url: new URL("http://localhost:3000"), // This made clicking sign in _go_ to this url
     callbackUrl: request.body?.callbackUrl ?? request.query?.callbackUrl,
     csrfToken: request.body?.csrfToken,
     cookies: request.cookies,

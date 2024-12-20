@@ -66,8 +66,28 @@ export const { handlers, auth, signIn, signOut, unstable_update } = NextAuth({
         }
       },
     }),
-    GitHub,
-    Keycloak,
+    {
+      id: "google",
+      name: "Google",
+      type: "oidc",
+      issuer: "https://accounts.google.com",
+      clientId: process.env.GOOGLE_CLIENT_ID,
+      clientSecret: process.env.GOOGLE_CLIENT_SECRET,
+      authorization: {
+        params: {
+          prompt: "consent",
+          access_type: "offline",
+          response_type: "code",
+        },
+      },
+      style: {
+        logo: "/google.svg",
+        bg: "#fff",
+        text: "#000",
+      },
+    },
+    // GitHub,
+    // Keycloak,
   ],
 
   callbacks: {

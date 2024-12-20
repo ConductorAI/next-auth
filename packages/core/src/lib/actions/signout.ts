@@ -15,7 +15,7 @@ export async function signOut(
   sessionStore: SessionStore,
   options: InternalOptions
 ): Promise<ResponseInternal> {
-  const { jwt, events, callbackUrl: redirect, logger, session } = options
+  const { jwt, events, callbackUrl: redirect, logger, session } = options // I think this is where redirect is incorrectly set
   const sessionToken = sessionStore.value
   if (!sessionToken) return { redirect, cookies }
 

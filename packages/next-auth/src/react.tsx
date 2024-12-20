@@ -22,8 +22,8 @@ import {
   useOnline,
 } from "./lib/client.js"
 
-import type { ProviderId } from "@auth/core/providers"
-import type { LoggerInstance, Session } from "@auth/core/types"
+import type { ProviderId } from "@conductorai/auth-core/providers"
+import type { LoggerInstance, Session } from "@conductorai/auth-core/types"
 import type {
   AuthClientConfig,
   ClientSafeProvider,

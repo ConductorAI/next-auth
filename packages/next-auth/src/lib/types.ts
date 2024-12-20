@@ -1,6 +1,6 @@
 // @ts-expect-error Next.js does not yet correctly use the `package.json#exports` field
 import type { NextRequest } from "next/server"
-import type { Awaitable } from "@auth/core/types"
+import type { Awaitable } from "@conductorai/auth-core/types"
 
 /**
  * AppRouteHandlerFnContext is the context that is passed to the handler as the

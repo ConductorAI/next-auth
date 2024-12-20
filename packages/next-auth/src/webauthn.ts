@@ -2,9 +2,9 @@ import { apiBaseUrl } from "./lib/client.js"
 import { startAuthentication, startRegistration } from "@simplewebauthn/browser"
 import { getCsrfToken, getProviders, __NEXTAUTH } from "./react.js"
 
-import type { LoggerInstance } from "@auth/core/types"
-import type { WebAuthnOptionsResponseBody } from "@auth/core/types"
-import type { ProviderId } from "@auth/core/providers"
+import type { LoggerInstance } from "@conductorai/auth-core/types"
+import type { WebAuthnOptionsResponseBody } from "@conductorai/auth-core/types"
+import type { ProviderId } from "@conductorai/auth-core/providers"
 import type {
   AuthClientConfig,
   SignInAuthorizationParams,

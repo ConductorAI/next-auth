@@ -2,7 +2,7 @@ import { describe, it, expect, vi, beforeEach, afterEach } from "vitest"
 import NextAuth, { NextAuthConfig } from "../src"
 // TODO: Move the MemoryAdapter to utils package
 import { MemoryAdapter } from "../../core/test/memory-adapter"
-import Nodemailer from "@auth/core/providers/nodemailer"
+import Nodemailer from "@conductorai/auth-core/providers/nodemailer"
 
 let mockedHeaders = vi.hoisted(() => {
   return new globalThis.Headers()

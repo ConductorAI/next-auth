@@ -1,4 +1,9 @@
-import { Auth, raw, skipCSRFCheck, createActionURL } from "@auth/core"
+import {
+  Auth,
+  raw,
+  skipCSRFCheck,
+  createActionURL,
+} from "@conductorai/auth-core"
 // @ts-expect-error Next.js does not yet correctly use the `package.json#exports` field
 import { headers as nextHeaders, cookies } from "next/headers"
 // @ts-expect-error Next.js does not yet correctly use the `package.json#exports` field
@@ -6,7 +11,7 @@ import { redirect } from "next/navigation"
 
 import type { NextAuthConfig } from "./index.js"
 import type { NextAuthResult, Session } from "../index.js"
-import type { ProviderType } from "@auth/core/providers"
+import type { ProviderType } from "@conductorai/auth-core/providers"
 
 type SignInParams = Parameters<NextAuthResult["signIn"]>
 export async function signIn(

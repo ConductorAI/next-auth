@@ -1,11 +1,15 @@
-import { Auth, createActionURL, type AuthConfig } from "@auth/core"
+import { Auth, createActionURL, type AuthConfig } from "@conductorai/auth-core"
 // @ts-expect-error Next.js does not yet correctly use the `package.json#exports` field
 import { headers } from "next/headers"
 // @ts-expect-error Next.js does not yet correctly use the `package.json#exports` field
 import { NextResponse } from "next/server"
 import { reqWithEnvURL } from "./env.js"
 
-import type { AuthAction, Awaitable, Session } from "@auth/core/types"
+import type {
+  AuthAction,
+  Awaitable,
+  Session,
+} from "@conductorai/auth-core/types"
 import type {
   GetServerSidePropsContext,
   NextApiRequest,

@@ -27,6 +27,7 @@ export async function AuthInternal(
   console.log("headers", request.headers)
 
   // THE BUILT VERSION OF THIS IS STALE FOR SOME REASON. MAYBE IT NEEDS A COMMIT????
+  // ^ it's not the commit thing, for some reason this isn't rebuilding with the release thing. (MAYBE it's because the npm run dev in root stopped happening? We need to think through this)
 
   // let url = request.url
   const url = request.url

@@ -1,6 +1,6 @@
 {
   "name": "@conductorai/auth-core",
-  "version": "0.37.4-fork.6",
+  "version": "0.37.4-fork.7",
   "description": "Authentication for the Web.",
   "keywords": [
     "authentication",

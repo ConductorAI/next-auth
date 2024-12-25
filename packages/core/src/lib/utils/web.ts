@@ -37,7 +37,7 @@ export async function toInternalRequest(
 
     console.log("req in toInternalRequest", req)
     console.log("req.url.toString() in toInternalRequest", req.url.toString())
-    console.log("headers", req.headers)
+    // console.log("headers", req.headers)
 
     const url = new URL(req.url)
 

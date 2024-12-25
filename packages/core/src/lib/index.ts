@@ -23,34 +23,40 @@ export async function AuthInternal(
   console.log("request", request)
   console.log("url to string", request.url.toString())
   console.log("url raw", request.url)
-  console.log("happy line in console")
-  console.log("headers", request.headers)
-
-  // THE BUILT VERSION OF THIS IS STALE FOR SOME REASON. MAYBE IT NEEDS A COMMIT????
-  // ^ it's not the commit thing, for some reason this isn't rebuilding with the release thing. (MAYBE it's because the npm run dev in root stopped happening? We need to think through this)
+  console.log("happy line in console with update x3")
+  // console.log("headers", request.headers)
 
   // let url = request.url
-  const url = request.url
 
   // if (request.headers) {
   //   const detectedHost =
   //     request.headers["x-forwarded-host"] ?? request.headers["host"]
   //   const detectedProtocol = request.headers["x-forwarded-proto"] ?? "https"
-  //   const _protocol = detectedProtocol.endsWith(":")
-  //     ? detectedProtocol
-  //     : detectedProtocol + ":"
 
-  //   url = new URL(`${_protocol}//${detectedHost}`)
+  //   if (detectedHost) {
+  //     const _protocol = detectedProtocol.endsWith(":")
+  //       ? detectedProtocol
+  //       : `${detectedProtocol}:`
+  //     try {
+  //       const constructedUrl = new URL(`${_protocol}//${detectedHost}`)
+  //       // Basic validation - check if URL has expected properties
+  //       if (constructedUrl.hostname && constructedUrl.protocol) {
+  //         url = constructedUrl
+  //         console.log("constructed url from headers", url)
+  //         console.log("constructed url to string", url.toString())
+  //       }
+  //     } catch (_e) {
+  //       console.warn("Failed to construct URL from headers, using default URL")
+  //     }
+  //   }
   // }
-
-  console.log("url", url)
 
   const { options, cookies } = await init({
     authOptions,
     action,
     providerId,
-    // url: request.url, // This is 0.0.0.0 I believe and the source of our issues
-    url: url,
+    url: request.url, // This is 0.0.0.0 I believe and the source of our issues
+    // url: url,
     callbackUrl: request.body?.callbackUrl ?? request.query?.callbackUrl,
     csrfToken: request.body?.csrfToken,
     cookies: request.cookies,

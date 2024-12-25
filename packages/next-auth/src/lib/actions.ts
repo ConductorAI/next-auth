@@ -35,7 +35,7 @@ export async function signIn(
     headers,
     process.env,
     config
-  )
+  ) // I think this is the callback url
 
   if (!provider) {
     signInURL.searchParams.append("callbackUrl", callbackUrl)

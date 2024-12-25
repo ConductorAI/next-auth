@@ -3,12 +3,39 @@ import { NextRequest } from "next/server"
 import type { NextAuthConfig } from "./index.js"
 import { setEnvDefaults as coreSetEnvDefaults } from "@conductorai/auth-core"
 
+function urlFromHeaders(req: NextRequest): string | null {
+  const detectedHost =
+    req.headers.get("x-forwarded-host") ?? req.headers.get("host")
+
+  if (!detectedHost) {
+    return null
+  }
+
+  const detectedProtocol =
+    req.headers.get("x-forwarded-proto") ?? req.protocol ?? "https"
+  const _protocol = detectedProtocol.endsWith(":")
+    ? detectedProtocol
+    : detectedProtocol + ":"
+  return `${_protocol}//${detectedHost}`
+  // return "https://auth.conductor.ai"
+}
+
 /** If `NEXTAUTH_URL` or `AUTH_URL` is defined, override the request's URL. */
 export function reqWithEnvURL(req: NextRequest): NextRequest {
-  const url = process.env.AUTH_URL ?? process.env.NEXTAUTH_URL
+  console.log("REQ IN env.ts next-auth package")
+  // print the time to seconds
+  console.log("Time: ", new Date().toLocaleTimeString())
+  // log headers
+  console.log("headers", req.headers)
+  console.log("********************")
+  const url =
+    process.env.AUTH_URL ?? process.env.NEXTAUTH_URL ?? urlFromHeaders(req)
   if (!url) return req
   const { origin: envOrigin } = new URL(url)
   const { href, origin } = req.nextUrl
+  console.log("envOrigin", envOrigin)
+  console.log("href", href)
+  console.log(href.replace(origin, envOrigin))
   return new NextRequest(href.replace(origin, envOrigin), req)
 }
 

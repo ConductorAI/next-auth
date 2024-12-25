@@ -40,6 +40,9 @@ export function setEnvDefaults(
     }
   }
 
+  console.log("---------------------------------------------")
+  // log the time
+  console.log("Time: ", new Date().toLocaleTimeString())
   config.redirectProxyUrl ??= envObject.AUTH_REDIRECT_PROXY_URL
   config.trustHost ??= !!(
     envObject.AUTH_URL ??

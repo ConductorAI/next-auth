@@ -18,7 +18,7 @@ export async function createCallbackUrl({
 }: CreateCallbackUrlParams) {
   const { url, callbacks } = options
 
-  let callbackUrl = url.origin
+  let callbackUrl = url.origin // This is what sets the cookie, but not the url
 
   if (paramValue) {
     // If callbackUrl form field or query parameter is passed try to use it if allowed

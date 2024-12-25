@@ -28,7 +28,7 @@ With module augmentation, you defined the types once, and you can be sure that t
 
 ## Module Augmentation
 
-Auth.js libraries come with certain interfaces that are shared across submodules and different Auth.js libraries (For example: `next-auth` and `@auth/prisma-adapter` will rely on types from `@auth/core`).
+Auth.js libraries come with certain interfaces that are shared across submodules and different Auth.js libraries (For example: `next-auth` and `@auth/prisma-adapter` will rely on types from `@conductorai/auth-core`).
 
 Good examples of such interfaces are `Session` or `User`. You can use TypeScript's [Module
 Augmentation](https://www.typescriptlang.org/docs/handbook/declaration-merging.html#module-augmentation) to extend these types to add your own properties across Auth.js without having to pass generic all over the place.

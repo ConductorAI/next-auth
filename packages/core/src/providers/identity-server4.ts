@@ -22,8 +22,8 @@ import type { OAuthConfig, OAuthUserConfig } from "./index.js"
  *
  * #### Configuration
  *```ts
- * import { Auth } from "@auth/core"
- * import IdentityServer4 from "@auth/core/providers/identity-server4"
+ * import { Auth } from "@conductorai/auth-core"
+ * import IdentityServer4 from "@conductorai/auth-core/providers/identity-server4"
  *
  * const request = new Request(origin)
  * const response = await Auth(request, {

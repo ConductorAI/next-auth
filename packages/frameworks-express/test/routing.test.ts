@@ -3,8 +3,8 @@ import supertest from "supertest"
 import express from "express"
 import { ExpressAuth } from "../src/index.js"
 
-import CredentialsProvider from "@auth/core/providers/credentials"
-import type { AuthConfig } from "@auth/core"
+import CredentialsProvider from "@conductorai/auth-core/providers/credentials"
+import type { AuthConfig } from "@conductorai/auth-core"
 
 // mock the toWebRequest, make it throw if "X-Test-Header" = 'throw'
 vi.mock("../src/lib/index.js", async (importOriginal) => {

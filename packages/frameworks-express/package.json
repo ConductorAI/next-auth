@@ -39,10 +39,10 @@
     "access": "public"
   },
   "dependencies": {
-    "@auth/core": "workspace:*"
+    "@conductorai/auth-core": "workspace:*"
   },
   "devDependencies": {
-    "@auth/core": "workspace:*",
+    "@conductorai/auth-core": "workspace:*",
     "@types/express": "^4.17.17",
     "@types/supertest": "^2.0.12",
     "supertest": "^6.3.3"

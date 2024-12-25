@@ -35,7 +35,7 @@
     "clean": "rm -rf *.js *.d.ts*"
   },
   "dependencies": {
-    "@auth/core": "workspace:*"
+    "@conductorai/auth-core": "workspace:*"
   },
   "peerDependencies": {
     "kysely": "^0.26.1"

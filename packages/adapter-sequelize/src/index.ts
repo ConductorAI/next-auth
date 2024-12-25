@@ -20,7 +20,7 @@ import type {
   AdapterAccount,
   AdapterSession,
   VerificationToken,
-} from "@auth/core/adapters"
+} from "@conductorai/auth-core/adapters"
 import { Sequelize, Model, ModelCtor } from "sequelize"
 import * as defaultModels from "./models.js"
 

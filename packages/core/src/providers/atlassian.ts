@@ -45,7 +45,7 @@ export interface AtlassianProfile extends Record<string, any> {
  * Import the provider and configure it in your **Auth.js** initialization file:
  *
  * ```ts
- * import Atlassian from "@auth/core/providers/atlassian"
+ * import Atlassian from "@conductorai/auth-core/providers/atlassian"
  * ...
  * providers: [
  *  Atlassian({

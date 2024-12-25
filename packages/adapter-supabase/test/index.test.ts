@@ -5,8 +5,8 @@ import type {
   AdapterSession,
   AdapterUser,
   VerificationToken,
-} from "@auth/core/adapters"
-import type { Account } from "@auth/core/types"
+} from "@conductorai/auth-core/adapters"
+import type { Account } from "@conductorai/auth-core/types"
 
 const url = process.env.SUPABASE_URL ?? "http://127.0.0.1:54321"
 const secret =

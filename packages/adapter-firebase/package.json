@@ -42,7 +42,7 @@
     "clean": "rm -rf *.js *.d.ts*"
   },
   "dependencies": {
-    "@auth/core": "workspace:*"
+    "@conductorai/auth-core": "workspace:*"
   },
   "peerDependencies": {
     "firebase-admin": "^12.0.0"

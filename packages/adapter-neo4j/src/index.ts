@@ -15,7 +15,7 @@
  * @module @auth/neo4j-adapter
  */
 import { type Session, isInt, integer } from "neo4j-driver"
-import { isDate, type Adapter } from "@auth/core/adapters"
+import { isDate, type Adapter } from "@conductorai/auth-core/adapters"
 
 /**
  * This is the interface of the Neo4j adapter options. The Neo4j adapter takes a {@link https://neo4j.com/docs/bolt/current/driver-api/#driver-session Neo4j session} as its only argument.

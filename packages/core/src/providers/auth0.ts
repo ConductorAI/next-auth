@@ -84,8 +84,8 @@ export interface Auth0Profile extends Record<string, any> {
  *
  * #### Configuration
  * ```ts
- * import { Auth } from "@auth/core"
- * import Auth0 from "@auth/core/providers/auth0"
+ * import { Auth } from "@conductorai/auth-core"
+ * import Auth0 from "@conductorai/auth-core/providers/auth0"
  *
  * const request = new Request(origin)
  * const response = await Auth(request, {

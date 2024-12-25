@@ -10,24 +10,24 @@
  * ## Installation
  *
  * ```bash npm2yarn
- * npm install @auth/core @auth/solid-start
+ * npm install @conductorai/auth-core @auth/solid-start
  * ```
  *
  * @module @auth/solid-start
  */
 
-import { Auth, type AuthConfig, customFetch } from "@auth/core"
-import type { AuthAction, Session } from "@auth/core/types"
+import { Auth, type AuthConfig, customFetch } from "@conductorai/auth-core"
+import type { AuthAction, Session } from "@conductorai/auth-core/types"
 
 export { customFetch }
-export { AuthError, CredentialsSignin } from "@auth/core/errors"
+export { AuthError, CredentialsSignin } from "@conductorai/auth-core/errors"
 export type {
   Account,
   DefaultSession,
   Profile,
   Session,
   User,
-} from "@auth/core/types"
+} from "@conductorai/auth-core/types"
 
 export interface SolidAuthConfig extends AuthConfig {
   /**
@@ -85,7 +85,7 @@ function SolidAuthHandler(prefix: string, authOptions: SolidAuthConfig) {
  * ```ts
  * // routes/api/auth/[...solidauth].ts
  * import { SolidAuth, type SolidAuthConfig } from "@auth/solid-start"
- * import GitHub from "@auth/core/providers/github"
+ * import GitHub from "@conductorai/auth-core/providers/github"
  *
  * export const authOpts: SolidAuthConfig = {
  *   providers: [
@@ -130,7 +130,7 @@ function SolidAuthHandler(prefix: string, authOptions: SolidAuthConfig) {
  *
  * ```tsx
  * // components/Protected.tsx
- * import { type Session } from "@auth/core/types";
+ * import { type Session } from "@conductorai/auth-core/types";
  * import { getSession } from "@auth/solid-start";
  * import { Component, Show } from "solid-js";
  * import { useRouteData } from "solid-start";
@@ -193,7 +193,7 @@ function SolidAuthHandler(prefix: string, authOptions: SolidAuthConfig) {
  *
  * ```tsx
  * // entry-server.tsx
- * import { Session } from "@auth/core";
+ * import { Session } from "@conductorai/auth-core";
  * import { getSession } from "@auth/solid-start";
  * import { redirect } from "solid-start";
  * import {

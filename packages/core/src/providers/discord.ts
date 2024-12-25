@@ -98,8 +98,8 @@ export interface DiscordProfile extends Record<string, any> {
  *
  * #### Configuration
  *```ts
- * import { Auth } from "@auth/core"
- * import Discord from "@auth/core/providers/discord"
+ * import { Auth } from "@conductorai/auth-core"
+ * import Discord from "@conductorai/auth-core/providers/discord"
  *
  * const request = new Request(origin)
  * const response = await Auth(request, {

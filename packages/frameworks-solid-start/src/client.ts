@@ -1,4 +1,4 @@
-import type { ProviderId } from "@auth/core/providers"
+import type { ProviderId } from "@conductorai/auth-core/providers"
 
 interface SignInOptions<Redirect extends boolean = true>
   extends Record<string, unknown> {

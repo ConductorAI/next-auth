@@ -1,9 +1,9 @@
 import { base } from "$app/paths"
 import { startAuthentication, startRegistration } from "@simplewebauthn/browser"
 
-import type { LoggerInstance } from "@auth/core/types"
-import type { WebAuthnOptionsResponseBody } from "@auth/core/types"
-import type { ProviderId } from "@auth/core/providers"
+import type { LoggerInstance } from "@conductorai/auth-core/types"
+import type { WebAuthnOptionsResponseBody } from "@conductorai/auth-core/types"
+import type { ProviderId } from "@conductorai/auth-core/providers"
 import type {
   SignInAuthorizationParams,
   SignInOptions,

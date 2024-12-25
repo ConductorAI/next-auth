@@ -62,7 +62,7 @@ packages:
   '@antfu/utils@0.7.10':
     resolution: {integrity: sha512-+562v9k4aI80m1+VuMHehNJWLOFjBnXn3tdOitzD0il5b7smkSBal4+a3oKiQTbrwMmN/TBUMDvbdoWDehgOww==}
 
-  '@auth/core@0.35.0':
+  '@conductorai/auth-core@0.35.0':
     resolution: {integrity: sha512-XvMALiYn5ZQd1hVeG1t+jCU89jRrc7ortl/05wkBrPHnRWZScxAK5jKuzBz+AOBQXewDjYcMpzeF5tTqg6rDhQ==}
     peerDependencies:
       '@simplewebauthn/browser': ^9.0.1
@@ -2501,7 +2501,7 @@ snapshots:
 
   '@antfu/utils@0.7.10': {}
 
-  '@auth/core@0.35.0':
+  '@conductorai/auth-core@0.35.0':
     dependencies:
       '@panva/hkdf': 1.2.1
       '@types/cookie': 0.6.0
@@ -2513,7 +2513,7 @@ snapshots:
 
   '@auth/solid-start@0.13.0(solid-js@1.8.22)(solid-start@0.2.32(@solidjs/meta@0.28.7(solid-js@1.8.22))(@solidjs/router@0.6.0(solid-js@1.8.22))(solid-js@1.8.22)(solid-start-node@0.2.32)(solid-start-vercel@0.2.32)(vite@3.2.10(terser@5.31.6)))':
     dependencies:
-      '@auth/core': 0.35.0
+      '@conductorai/auth-core': 0.35.0
       solid-js: 1.8.22
       solid-start: 0.2.32(@solidjs/meta@0.28.7(solid-js@1.8.22))(@solidjs/router@0.6.0(solid-js@1.8.22))(solid-js@1.8.22)(solid-start-node@0.2.32)(solid-start-vercel@0.2.32)(vite@3.2.10(terser@5.31.6))
     transitivePeerDependencies:

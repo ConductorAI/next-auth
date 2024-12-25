@@ -45,7 +45,7 @@
     "clean": "rm -rf *.js *.d.ts*"
   },
   "dependencies": {
-    "@auth/core": "workspace:*"
+    "@conductorai/auth-core": "workspace:*"
   },
   "peerDependencies": {
     "fauna": "^1.3.1"

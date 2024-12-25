@@ -114,8 +114,8 @@ export interface TwitterProfile {
  *
  * #### Configuration
  *```ts
- * import { Auth } from "@auth/core"
- * import Twitter from "@auth/core/providers/twitter"
+ * import { Auth } from "@conductorai/auth-core"
+ * import Twitter from "@conductorai/auth-core/providers/twitter"
  *
  * const request = new Request(origin)
  * const response = await Auth(request, {

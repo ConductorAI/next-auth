@@ -40,8 +40,8 @@ export interface KindeProfile extends Record<string, any> {
  *
  * #### Configuration
  * ```ts
- * import { Auth } from "@auth/core"
- * import Kinde from "@auth/core/providers/kinde"
+ * import { Auth } from "@conductorai/auth-core"
+ * import Kinde from "@conductorai/auth-core/providers/kinde"
  *
  * const request = new Request(origin)
  * const response = await Auth(request, {

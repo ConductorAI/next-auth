@@ -21,7 +21,7 @@ import {
   type AdapterUser,
   type VerificationToken,
   isDate,
-} from "@auth/core/adapters"
+} from "@conductorai/auth-core/adapters"
 
 export function format<T>(obj: Record<string, any>): T {
   for (const [key, value] of Object.entries(obj)) {

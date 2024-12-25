@@ -34,7 +34,7 @@ export type {
   Profile,
   Session,
   User,
-} from "@auth/core/types"
+} from "@conductorai/auth-core/types"
 
 export function FrameworkAuth() {
   throw new Error("Not implemented")

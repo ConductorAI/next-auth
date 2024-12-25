@@ -38,7 +38,7 @@ npm install next-auth@beta
 
 ## Breaking Changes
 
-- Auth.js now builds on `@auth/core` with stricter [OAuth](https://www.ietf.org/rfc/rfc6749.html)/[OIDC](https://openid.net/specs/openid-connect-core-1_0.html) spec-compliance, which might break some existing OAuth providers. See our [open issues](https://github.com/nextauthjs/next-auth/issues?q=is%3Aopen+is%3Aissue+label%3Aproviders) for more details.
+- Auth.js now builds on `@conductorai/auth-core` with stricter [OAuth](https://www.ietf.org/rfc/rfc6749.html)/[OIDC](https://openid.net/specs/openid-connect-core-1_0.html) spec-compliance, which might break some existing OAuth providers. See our [open issues](https://github.com/nextauthjs/next-auth/issues?q=is%3Aopen+is%3Aissue+label%3Aproviders) for more details.
 - OAuth 1.0 support is deprecated.
 - The minimum required Next.js version is now [14.0](https://nextjs.org/14).
 - The import `next-auth/next` is replaced. See [Authenticating server-side](#authenticating-server-side) for more details.
@@ -68,7 +68,7 @@ export const { auth, handlers, signIn, signOut } = NextAuth({
 Some things to note about the new configuration:
 
 1. This is now in a file named `auth.ts` in the root of your repository. It can technically be named anything, but you'll be importing the exported methods from here across your app, so we'd recommend keeping it short.
-2. There is no need to install `@auth/core` to import the provider definitions from, these come from `next-auth` itself.
+2. There is no need to install `@conductorai/auth-core` to import the provider definitions from, these come from `next-auth` itself.
 3. The configuration object passed to the `NextAuth()` function is the same as before.
 4. The returned methods exported from the `NextAuth()` function call are new and will be required elsewhere in your application.
 
@@ -338,7 +338,7 @@ export type {
   Profile,
   Session,
   User,
-} from "@auth/core/types"
+} from "@conductorai/auth-core/types"
 ```
 
 - All `Adapter` types are re-exported from `/adapters` in the framework packages as well, i.e. from `next-auth/adapters`, `@auth/sveltekit/adapters`, etc.

@@ -5,10 +5,10 @@
  * ## Installation
  *
  * ```bash npm2yarn
- * npm install @auth/core
+ * npm install @conductorai/auth-core
  * ```
  *
- * You can then import this submodule from `@auth/core/types`.
+ * You can then import this submodule from `@conductorai/auth-core/types`.
  *
  * ## Usage
  *
@@ -25,7 +25,7 @@
  *
  * @example
  * ```ts title=index.ts
- * import { Auth } from "@auth/core"
+ * import { Auth } from "@conductorai/auth-core"
  *
  * const request = new Request("https://example.com")
  * const response = await Auth(request, {

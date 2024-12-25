@@ -115,8 +115,8 @@ export type CredentialsProviderId = "credentials"
  *
  * @example
  * ```ts
- * import { Auth } from "@auth/core"
- * import Credentials from "@auth/core/providers/credentials"
+ * import { Auth } from "@conductorai/auth-core"
+ * import Credentials from "@conductorai/auth-core/providers/credentials"
  *
  * const request = new Request("https://example.com")
  * const response = await AuthHandler(request, {

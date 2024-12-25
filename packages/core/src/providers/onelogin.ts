@@ -22,8 +22,8 @@ import type { OAuthConfig, OAuthUserConfig } from "./index.js"
  *
  * #### Configuration
  *```ts
- * import { Auth } from "@auth/core"
- * import OneLogin from "@auth/core/providers/onelogin"
+ * import { Auth } from "@conductorai/auth-core"
+ * import OneLogin from "@conductorai/auth-core/providers/onelogin"
  *
  * const request = new Request(origin)
  * const response = await Auth(request, {

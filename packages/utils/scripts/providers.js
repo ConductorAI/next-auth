@@ -22,9 +22,9 @@ try {
   for (const file of files) {
     const destinationPath = resolve(destinationDir, file)
     const provider = file.substring(0, file.indexOf("."))
-    let content = `export * from "@auth/core/providers/${provider}"`
+    let content = `export * from "@conductorai/auth-core/providers/${provider}"`
     if (provider !== "index") {
-      content += `\nexport { default } from "@auth/core/providers/${provider}"`
+      content += `\nexport { default } from "@conductorai/auth-core/providers/${provider}"`
     }
 
     content = content.replace(/\/index/g, "")

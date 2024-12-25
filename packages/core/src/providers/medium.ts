@@ -23,8 +23,8 @@ import type { OAuthConfig, OAuthUserConfig } from "./index.js"
  *
  * #### Configuration
  *```ts
- * import { Auth } from "@auth/core"
- * import Medium from "@auth/core/providers/medium"
+ * import { Auth } from "@conductorai/auth-core"
+ * import Medium from "@conductorai/auth-core/providers/medium"
  *
  * const request = new Request(origin)
  * const response = await Auth(request, {

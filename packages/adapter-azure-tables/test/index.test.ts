@@ -5,7 +5,10 @@ import {
   TableClient,
 } from "@azure/data-tables"
 import { keys, TableStorageAdapter, withoutKeys } from "../src"
-import type { AdapterUser, VerificationToken } from "@auth/core/adapters"
+import type {
+  AdapterUser,
+  VerificationToken,
+} from "@conductorai/auth-core/adapters"
 
 const testAccount = {
   // default constants used by a dev instance of azurite

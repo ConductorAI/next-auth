@@ -24,7 +24,7 @@ import {
   type AdapterSession,
   type VerificationToken,
   isDate,
-} from "@auth/core/adapters"
+} from "@conductorai/auth-core/adapters"
 
 export interface Database {
   User: AdapterUser

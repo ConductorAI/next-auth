@@ -27,8 +27,8 @@ export interface SalesforceProfile extends Record<string, any> {
  *
  * #### Configuration
  * ```ts
- * import { Auth } from "@auth/core"
- * import Salesforce from "@auth/core/providers/salesforce"
+ * import { Auth } from "@conductorai/auth-core"
+ * import Salesforce from "@conductorai/auth-core/providers/salesforce"
  *
  * const request = new Request(origin)
  * const response = await Auth(request, {

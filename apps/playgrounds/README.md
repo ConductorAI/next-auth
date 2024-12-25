@@ -7,11 +7,11 @@
       <a href="https://npm.im/next-auth">
         <img src="https://img.shields.io/badge/TypeScript-blue?style=flat-square" alt="TypeScript" />
       </a>
-      <a href="https://npm.im/@auth/core">
-        <img alt="npm" src="https://img.shields.io/npm/v/@auth/core?color=green&label=@auth/core&style=flat-square">
+      <a href="https://npm.im/@conductorai/auth-core">
+        <img alt="npm" src="https://img.shields.io/npm/v/@conductorai/auth-core?color=green&label=@conductorai/auth-core&style=flat-square">
       </a>
-      <a href="https://www.npmtrends.com/@auth/core">
-        <img src="https://img.shields.io/npm/dm/@auth/core?label=%20downloads&style=flat-square" alt="Downloads" />
+      <a href="https://www.npmtrends.com/@conductorai/auth-core">
+        <img src="https://img.shields.io/npm/dm/@conductorai/auth-core?label=%20downloads&style=flat-square" alt="Downloads" />
       </a>
       <a href="https://github.com/nextauthjs/next-auth/stargazers">
         <img src="https://img.shields.io/github/stars/nextauthjs/next-auth?style=flat-square" alt="GitHub Stars" />

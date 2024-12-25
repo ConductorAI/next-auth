@@ -125,8 +125,8 @@ export interface NextcloudProfile extends Record<string, any> {
  *
  * #### Configuration
  * ```ts
- * import { Auth } from "@auth/core"
- * import Nextcloud from "@auth/core/providers/nextcloud"
+ * import { Auth } from "@conductorai/auth-core"
+ * import Nextcloud from "@conductorai/auth-core/providers/nextcloud"
  *
  * const request = new Request(origin)
  * const response = await Auth(request, {

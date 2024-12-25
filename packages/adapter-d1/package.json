@@ -43,7 +43,7 @@
     "clean": "rm -rf *.js *.d.ts*"
   },
   "dependencies": {
-    "@auth/core": "workspace:*"
+    "@conductorai/auth-core": "workspace:*"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20230321.0",

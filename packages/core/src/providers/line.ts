@@ -34,8 +34,8 @@ export interface LineProfile extends Record<string, any> {
  *
  * #### Configuration
  *```ts
- * import { Auth } from "@auth/core"
- * import LINE from "@auth/core/providers/line"
+ * import { Auth } from "@conductorai/auth-core"
+ * import LINE from "@conductorai/auth-core/providers/line"
  *
  * const request = new Request(origin)
  * const response = await Auth(request, {

@@ -2,7 +2,9 @@
   "$schema": "https://turbo.build/schema.json",
   "tasks": {
     "build": {
-      "dependsOn": ["^build"],
+      "dependsOn": [
+        "^build"
+      ],
       "outputs": [
         ".next",
         "dist/**",
@@ -25,12 +27,19 @@
       "cache": false
     },
     "test": {
-      "outputs": ["coverage/**"],
-      "inputs": ["src/**/", "test/**/"],
+      "outputs": [
+        "coverage/**"
+      ],
+      "inputs": [
+        "src/**/",
+        "test/**/"
+      ],
       "outputLogs": "new-only"
     },
     "test:e2e": {
-      "dependsOn": ["next-auth#build"],
+      "dependsOn": [
+        "next-auth#build"
+      ],
       "outputs": [
         "blob-report/**",
         "playwright-report/**",
@@ -47,27 +56,10 @@
         "AUTH_TRUST_HOST"
       ]
     },
-    "@auth/xata-adapter#test": {
-      "passThroughEnv": ["XATA_API_KEY", "XATA_DATABASE_URL"]
-    },
-    "@auth/hasura-adapter#build": {
-      "dependsOn": ["@auth/core#build"],
-      "outputs": [
-        "lib/**",
-        "*.js",
-        "*.d.ts",
-        "*.d.ts.map",
-        "src/lib/generated/**"
-      ]
-    },
     "docs#dev": {
       "dependsOn": [
         "next-auth#build",
-        "@auth/core#build",
-        "@auth/sveltekit#build",
-        "@auth/express#build",
-        "@auth/solid-start#build",
-        "@auth/qwik#build"
+        "@conductorai/auth-core#build"
       ],
       "persistent": true,
       "cache": false
@@ -85,33 +77,7 @@
         "next.config.js"
       ],
       "dependsOn": [
-        "@auth/core#build",
-        "@auth/azure-tables-adapter#build",
-        "@auth/d1-adapter#build",
-        "@auth/dgraph-adapter#build",
-        "@auth/drizzle-adapter#build",
-        "@auth/dynamodb-adapter#build",
-        "@auth/edgedb-adapter#build",
-        "@auth/fauna-adapter#build",
-        "@auth/firebase-adapter#build",
-        "@auth/hasura-adapter#build",
-        "@auth/kysely-adapter#build",
-        "@auth/mikro-orm-adapter#build",
-        "@auth/mongodb-adapter#build",
-        "@auth/neo4j-adapter#build",
-        "@auth/pg-adapter#build",
-        "@auth/pouchdb-adapter#build",
-        "@auth/prisma-adapter#build",
-        "@auth/sequelize-adapter#build",
-        "@auth/solid-start#build",
-        "@auth/supabase-adapter#build",
-        "@auth/surrealdb-adapter#build",
-        "@auth/sveltekit#build",
-        "@auth/typeorm-adapter#build",
-        "@auth/unstorage-adapter#build",
-        "@auth/upstash-redis-adapter#build",
-        "@auth/xata-adapter#build",
-        "@auth/qwik#build",
+        "@conductorai/auth-core#build",
         "next-auth#build",
         "^build"
       ],

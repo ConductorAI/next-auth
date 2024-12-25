@@ -63,8 +63,8 @@ export interface AzureADB2CProfile {
  * @example
  *
  * ```ts
- * import { Auth } from "@auth/core"
- * import AzureADB2C from "@auth/core/providers/azure-ad-b2c"
+ * import { Auth } from "@conductorai/auth-core"
+ * import AzureADB2C from "@conductorai/auth-core/providers/azure-ad-b2c"
  *
  * const request = new Request("https://example.com")
  * const response = await AuthHandler(request, {

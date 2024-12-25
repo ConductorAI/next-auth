@@ -139,20 +139,20 @@ import {
   setEnvDefaults,
   createActionURL,
   customFetch,
-} from "@auth/core"
-import type { Session } from "@auth/core/types"
+} from "@conductorai/auth-core"
+import type { Session } from "@conductorai/auth-core/types"
 import * as e from "express"
 import { toWebRequest, toExpressResponse } from "./lib/index.js"
 
 export { customFetch }
-export { AuthError, CredentialsSignin } from "@auth/core/errors"
+export { AuthError, CredentialsSignin } from "@conductorai/auth-core/errors"
 export type {
   Account,
   DefaultSession,
   Profile,
   Session,
   User,
-} from "@auth/core/types"
+} from "@conductorai/auth-core/types"
 
 export type ExpressAuthConfig = Omit<AuthConfig, "raw">
 

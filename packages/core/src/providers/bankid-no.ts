@@ -102,8 +102,8 @@ export interface BankIDNorwayProfile {
  *
  * #### Configuration
  * ```ts
- * import { Auth } from "@auth/core"
- * import BankIDNorge from "@auth/core/providers/bankid-no"
+ * import { Auth } from "@conductorai/auth-core"
+ * import BankIDNorge from "@conductorai/auth-core/providers/bankid-no"
  *
  * const request = new Request(origin)
  * const response = await Auth(request, {

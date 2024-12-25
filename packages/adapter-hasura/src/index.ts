@@ -15,7 +15,7 @@
  * @module @auth/hasura-adapter
  */
 
-import { isDate, type Adapter } from "@auth/core/adapters"
+import { isDate, type Adapter } from "@conductorai/auth-core/adapters"
 
 import {
   client as hasuraClient,

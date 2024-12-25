@@ -80,8 +80,8 @@ export interface GitHubProfile {
  *
  * #### Configuration
  * ```ts
- * import { Auth } from "@auth/core"
- * import GitHub from "@auth/core/providers/github"
+ * import { Auth } from "@conductorai/auth-core"
+ * import GitHub from "@conductorai/auth-core/providers/github"
  *
  * const request = new Request(origin)
  * const response = await Auth(request, {

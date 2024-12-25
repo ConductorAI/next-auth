@@ -11,7 +11,7 @@ import {
   AdapterSession,
   AdapterUser,
   AdapterAccount,
-} from "@auth/core/adapters"
+} from "@conductorai/auth-core/adapters"
 import { D1Database, D1DatabaseAPI } from "@miniflare/d1"
 import { runBasicTests } from "utils/adapter"
 import Database from "better-sqlite3"

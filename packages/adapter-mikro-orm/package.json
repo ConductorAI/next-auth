@@ -49,6 +49,6 @@
     "@mikro-orm/sqlite": "^5"
   },
   "dependencies": {
-    "@auth/core": "workspace:*"
+    "@conductorai/auth-core": "workspace:*"
   }
 }

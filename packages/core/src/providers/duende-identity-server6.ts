@@ -29,8 +29,8 @@ export interface DuendeISUser extends Record<string, any> {
  *
  * #### Configuration
  *```ts
- * import { Auth } from "@auth/core"
- * import DuendeIdentityServer6 from "@auth/core/providers/duende-identity-server6"
+ * import { Auth } from "@conductorai/auth-core"
+ * import DuendeIdentityServer6 from "@conductorai/auth-core/providers/duende-identity-server6"
  *
  * const request = new Request(origin)
  * const response = await Auth(request, {
@@ -60,7 +60,7 @@ export interface DuendeISUser extends Record<string, any> {
  * You can sign in to the demo service with either <b>bob/bob</b> or <b>alice/alice</b>.
  *
  * ```ts
- * import DuendeIdentityServer6 from "@auth/core/providers/duende-identity-server6"
+ * import DuendeIdentityServer6 from "@conductorai/auth-core/providers/duende-identity-server6"
  * providers: [
  *   DuendeIdentityServer6({
  *     clientId: "interactive.confidential",

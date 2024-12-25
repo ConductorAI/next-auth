@@ -55,7 +55,7 @@ export interface VippsProfile extends Record<string, any> {
  * ## Example
  *
  * ```ts
- * import Vipps from "@auth/core/providers/vipps"
+ * import Vipps from "@conductorai/auth-core/providers/vipps"
  * ...
  * providers: [
  *  Vipps({

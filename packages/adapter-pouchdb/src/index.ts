@@ -21,7 +21,7 @@ import type {
   AdapterSession,
   AdapterUser,
   VerificationToken,
-} from "@auth/core/adapters"
+} from "@conductorai/auth-core/adapters"
 
 type PrefixConfig = Record<
   "user" | "account" | "session" | "verificationToken",

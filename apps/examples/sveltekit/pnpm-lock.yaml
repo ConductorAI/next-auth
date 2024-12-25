@@ -40,7 +40,7 @@ packages:
     resolution: {integrity: sha512-lFMjJTrFL3j7L9yBxwYfCq2k6qqwHyzuUl/XBnif78PWTJYyL/dfowQHWE3sp6U6ZzqWiiIZnpTMO96zhkjwtg==}
     engines: {node: '>=6.0.0'}
 
-  '@auth/core@0.30.0':
+  '@conductorai/auth-core@0.30.0':
     resolution: {integrity: sha512-8AE4m/nk+4EIiVCJwxZAsJeAQuzpEC8M8768mmKVn60CGDdupKQkVhxbRlm5Qh7eNRCoFFME+0DvtaX2aXrYaA==}
     peerDependencies:
       '@simplewebauthn/browser': ^9.0.1
@@ -784,7 +784,7 @@ snapshots:
       '@jridgewell/gen-mapping': 0.3.4
       '@jridgewell/trace-mapping': 0.3.23
 
-  '@auth/core@0.30.0':
+  '@conductorai/auth-core@0.30.0':
     dependencies:
       '@panva/hkdf': 1.1.1
       '@types/cookie': 0.6.0
@@ -796,7 +796,7 @@ snapshots:
 
   '@auth/sveltekit@1.0.1(@sveltejs/kit@2.5.7)(svelte@4.2.15)':
     dependencies:
-      '@auth/core': 0.30.0
+      '@conductorai/auth-core': 0.30.0
       '@sveltejs/kit': 2.5.7(@sveltejs/vite-plugin-svelte@3.1.0)(svelte@4.2.15)(vite@5.2.10)
       set-cookie-parser: 2.6.0
       svelte: 4.2.15

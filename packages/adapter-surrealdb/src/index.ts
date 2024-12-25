@@ -21,8 +21,8 @@ import type {
   AdapterAccount,
   AdapterSession,
   VerificationToken,
-} from "@auth/core/adapters"
-import type { ProviderType } from "@auth/core/providers"
+} from "@conductorai/auth-core/adapters"
+import type { ProviderType } from "@conductorai/auth-core/providers"
 
 type Document = Record<string, string | null | undefined> & { id: string }
 export type UserDoc = Document & { email: string }

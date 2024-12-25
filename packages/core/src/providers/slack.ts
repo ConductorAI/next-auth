@@ -54,8 +54,8 @@ export interface SlackProfile extends Record<string, any> {
  *
  * #### Configuration
  *```ts
- * import { Auth } from "@auth/core"
- * import Slack from "@auth/core/providers/slack"
+ * import { Auth } from "@conductorai/auth-core"
+ * import Slack from "@conductorai/auth-core/providers/slack"
  *
  * const request = new Request(origin)
  * const response = await Auth(request, {

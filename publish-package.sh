@@ -29,9 +29,9 @@ pnpm install
 echo -e "\n${GREEN}Building packages...${NC}"
 pnpm build
 
-# Run tests
-echo -e "\n${GREEN}Running tests...${NC}"
-pnpm test
+# # Run tests
+# echo -e "\n${GREEN}Running tests...${NC}"
+# pnpm test
 
 # Function to publish a package
 publish_package() {

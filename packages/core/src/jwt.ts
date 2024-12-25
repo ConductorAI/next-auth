@@ -16,10 +16,10 @@
  * ## Installation
  *
  * ```bash npm2yarn
- * npm install @auth/core
+ * npm install @conductorai/auth-core
  * ```
  *
- * You can then import this submodule from `@auth/core/jwt`.
+ * You can then import this submodule from `@conductorai/auth-core/jwt`.
  *
  * ## Usage
  *

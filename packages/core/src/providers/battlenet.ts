@@ -34,8 +34,8 @@ export type BattleNetIssuer =
  *
  * #### Configuration
  *```ts
- * import { Auth } from "@auth/core"
- * import BattleNet from "@auth/core/providers/battlenet"
+ * import { Auth } from "@conductorai/auth-core"
+ * import BattleNet from "@conductorai/auth-core/providers/battlenet"
  *
  * const request = new Request(origin)
  * const response = await Auth(request, {

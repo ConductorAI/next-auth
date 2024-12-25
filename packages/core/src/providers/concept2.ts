@@ -40,8 +40,8 @@ export interface Concept2Profile extends Record<string, any> {
  *
  * #### Configuration
  *```js
- * import { Auth } from "@auth/core"
- * import Concept2 from "@auth/core/providers/concept2"
+ * import { Auth } from "@conductorai/auth-core"
+ * import Concept2 from "@conductorai/auth-core/providers/concept2"
  *
  * const request = new Request(origin)
  * const response = await Auth(request, {

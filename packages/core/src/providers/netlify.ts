@@ -23,8 +23,8 @@ import type { OAuthConfig, OAuthUserConfig } from "./index.js"
  *
  * #### Configuration
  *```ts
- * import { Auth } from "@auth/core"
- * import Netlify from "@auth/core/providers/netlify"
+ * import { Auth } from "@conductorai/auth-core"
+ * import Netlify from "@conductorai/auth-core/providers/netlify"
  *
  * const request = new Request(origin)
  * const response = await Auth(request, {

@@ -27,7 +27,7 @@ import type {
   AdapterAccount,
   AdapterSession,
   VerificationToken,
-} from "@auth/core/adapters"
+} from "@conductorai/auth-core/adapters"
 
 /** Configure the Firebase Adapter. */
 export interface FirebaseAdapterConfig extends AppOptions {

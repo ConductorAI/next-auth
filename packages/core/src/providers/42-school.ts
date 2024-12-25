@@ -186,8 +186,8 @@ export interface FortyTwoProfile extends UserData, Record<string, any> {
  *
  * #### Configuration
  *```ts
- * import { Auth } from "@auth/core"
- * import FortyTwoSchool from "@auth/core/providers/42-school"
+ * import { Auth } from "@conductorai/auth-core"
+ * import FortyTwoSchool from "@conductorai/auth-core/providers/42-school"
  *
  * const request = new Request(origin)
  * const response = await Auth(request, {

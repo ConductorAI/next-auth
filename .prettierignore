@@ -31,7 +31,7 @@ packages/**/*.cjs
 packages/**/*.js
 !packages/*/scripts/*.js
 
-# @auth/core
+# @conductorai/auth-core
 packages/core/src/providers/provider-types.ts
 packages/core/src/lib/pages/styles.ts
 

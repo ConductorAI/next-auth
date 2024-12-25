@@ -32,8 +32,8 @@ export const raw = Symbol("return-type-raw")
  *
  * @example
  * ```ts
- * import { Auth, customFetch } from "@auth/core"
- * import GitHub from "@auth/core/providers/github"
+ * import { Auth, customFetch } from "@conductorai/auth-core"
+ * import GitHub from "@conductorai/auth-core/providers/github"
  *
  * const dispatcher = new ProxyAgent("my.proxy.server")
  * function proxy(...args: Parameters<typeof fetch>): ReturnType<typeof fetch> {

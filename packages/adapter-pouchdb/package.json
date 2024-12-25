@@ -41,7 +41,7 @@
     "pouchdb-find": "^8.0.1"
   },
   "dependencies": {
-    "@auth/core": "workspace:*"
+    "@conductorai/auth-core": "workspace:*"
   },
   "devDependencies": {
     "@types/pouchdb": "^6.4.0",

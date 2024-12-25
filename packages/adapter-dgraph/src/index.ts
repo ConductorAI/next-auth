@@ -15,7 +15,7 @@
  * @module @auth/dgraph-adapter
  */
 import { client as dgraphClient } from "./lib/client.js"
-import { isDate, type Adapter } from "@auth/core/adapters"
+import { isDate, type Adapter } from "@conductorai/auth-core/adapters"
 import type { DgraphClientParams } from "./lib/client.js"
 import * as defaultFragments from "./lib/graphql/fragments.js"
 import {
@@ -23,7 +23,7 @@ import {
   AdapterSession,
   AdapterUser,
   VerificationToken,
-} from "@auth/core/adapters"
+} from "@conductorai/auth-core/adapters"
 
 export type { DgraphClientParams, DgraphClientError } from "./lib/client.js"
 

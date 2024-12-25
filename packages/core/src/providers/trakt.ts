@@ -37,8 +37,8 @@ export interface TraktUser extends Record<string, any> {
  *
  * #### Configuration
  *```ts
- * import { Auth } from "@auth/core"
- * import Trakt from "@auth/core/providers/trakt"
+ * import { Auth } from "@conductorai/auth-core"
+ * import Trakt from "@conductorai/auth-core/providers/trakt"
  *
  * const request = new Request(origin)
  * const response = await Auth(request, {

@@ -34,7 +34,7 @@ export interface MicrosoftEntraIDProfile extends Record<string, any> {
  * @example
  *
  * ```ts
- * import MicrosoftEntraID from "@auth/core/providers/microsoft-entra-id"
+ * import MicrosoftEntraID from "@conductorai/auth-core/providers/microsoft-entra-id"
  * ...
  * providers: [
  *   MicrosoftEntraID({
@@ -58,7 +58,7 @@ export interface MicrosoftEntraIDProfile extends Record<string, any> {
  *
  * @example
  * ```ts
- * import MicrosoftEntraID from "@auth/core/providers/microsoft-entra-id"
+ * import MicrosoftEntraID from "@conductorai/auth-core/providers/microsoft-entra-id"
  *
  * providers: [
  *   MicrosoftEntraID({

@@ -28,7 +28,7 @@ import {
   type AdapterAccount,
   type VerificationToken as AdapterVerificationToken,
   isDate,
-} from "@auth/core/adapters"
+} from "@conductorai/auth-core/adapters"
 import {
   CREATE_ACCOUNT_SQL,
   CREATE_SESSION_SQL,

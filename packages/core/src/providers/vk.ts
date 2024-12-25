@@ -303,8 +303,8 @@ export interface VkProfile {
  *
  * #### Configuration
  *```ts
- * import { Auth } from "@auth/core"
- * import VK from "@auth/core/providers/vk"
+ * import { Auth } from "@conductorai/auth-core"
+ * import VK from "@conductorai/auth-core/providers/vk"
  *
  * const request = new Request(origin)
  * const response = await Auth(request, {

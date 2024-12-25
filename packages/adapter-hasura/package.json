@@ -46,7 +46,7 @@
     "clean": "rm -rf *.js *.d.ts* lib"
   },
   "dependencies": {
-    "@auth/core": "workspace:*"
+    "@conductorai/auth-core": "workspace:*"
   },
   "devDependencies": {
     "@graphql-codegen/cli": "^5.0.0",

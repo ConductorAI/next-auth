@@ -20,7 +20,7 @@ export default defineConfig(() => {
           "@builder.io/qwik",
           "@builder.io/qwik-city",
           "@builder.io/qwik/build",
-          "@auth/core",
+          "@conductorai/auth-core",
         ],
       },
     },

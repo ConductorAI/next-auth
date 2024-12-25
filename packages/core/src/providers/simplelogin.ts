@@ -32,8 +32,8 @@ export interface SimpleLoginProfile {
  *
  * #### Configuration
  *```ts
- * import { Auth } from "@auth/core"
- * import SimpleLogin from "@auth/core/providers/simplelogin"
+ * import { Auth } from "@conductorai/auth-core"
+ * import SimpleLogin from "@conductorai/auth-core/providers/simplelogin"
  *
  * const request = new Request(origin)
  * const response = await Auth(request, {

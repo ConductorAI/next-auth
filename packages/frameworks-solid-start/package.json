@@ -55,7 +55,7 @@
     "clean": "rm -rf *.js *.d.ts* providers src/providers"
   },
   "dependencies": {
-    "@auth/core": "workspace:*"
+    "@conductorai/auth-core": "workspace:*"
   },
   "devDependencies": {
     "@solidjs/meta": "^0.28.0",

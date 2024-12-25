@@ -14,7 +14,7 @@
  * probably do not need to create your own. If you are using a data solution that cannot be integrated with an official adapter, this module will help you create a compatible adapter.
  *
  * :::caution Note
- * Although `@auth/core` _is_ framework/runtime agnostic, an adapter might rely on a client/ORM package,
+ * Although `@conductorai/auth-core` _is_ framework/runtime agnostic, an adapter might rely on a client/ORM package,
  * that is not yet compatible with your framework/runtime (e.g. it might rely on [Node.js APIs](https://nodejs.org/docs/latest/api)).
  * Related issues should be reported to the corresponding package maintainers.
  * :::
@@ -22,17 +22,17 @@
  * ## Installation
  *
  * ```bash npm2yarn
- * npm install @auth/core
+ * npm install @conductorai/auth-core
  * ```
  *
- * Then, you can import this submodule from `@auth/core/adapters`.
+ * Then, you can import this submodule from `@conductorai/auth-core/adapters`.
  *
  * ## Usage
  *
  * Each adapter method and its function signature is documented in the {@link Adapter} interface.
  *
  * ```ts title=my-adapter.ts
- * import { type Adapter } from "@auth/core/adapters"
+ * import { type Adapter } from "@conductorai/auth-core/adapters"
  *
  * // 1. Simplest form, a plain object.
  * export const MyAdapter: Adapter {
@@ -70,7 +70,7 @@
  * Note, you might be able to tweak an existing adapter to work with your data layer, instead of creating one from scratch.
  *
  * ```ts title=my-adapter.ts
- * import { type Adapter } from "@auth/core/adapters"
+ * import { type Adapter } from "@conductorai/auth-core/adapters"
  * import { PrismaAdapter } from "@auth/prisma-adapter"
  * import { PrismaClient } from "@prisma/client"
  *

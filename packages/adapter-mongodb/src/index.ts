@@ -22,7 +22,7 @@ import type {
   AdapterAccount,
   AdapterSession,
   VerificationToken,
-} from "@auth/core/adapters"
+} from "@conductorai/auth-core/adapters"
 import type { MongoClient } from "mongodb"
 
 /**

@@ -37,7 +37,7 @@
     "test": "./test/test.sh"
   },
   "dependencies": {
-    "@auth/core": "workspace:*"
+    "@conductorai/auth-core": "workspace:*"
   },
   "peerDependencies": {
     "@supabase/supabase-js": "^2.43.1"

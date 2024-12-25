@@ -53,7 +53,7 @@
     "providers": "node ../utils/scripts/providers"
   },
   "dependencies": {
-    "@auth/core": "workspace:*",
+    "@conductorai/auth-core": "workspace:*",
     "set-cookie-parser": "^2.6.0"
   },
   "devDependencies": {

@@ -164,8 +164,8 @@ export interface WebAuthnConfig extends CommonProviderOptions {
  *
  * #### Configuration
  * ```ts
- * import { Auth } from "@auth/core"
- * import WebAuthn from "@auth/core/providers/webauthn"
+ * import { Auth } from "@conductorai/auth-core"
+ * import WebAuthn from "@conductorai/auth-core/providers/webauthn"
  *
  * const request = new Request(origin)
  * const response = await Auth(request, {

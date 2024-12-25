@@ -49,7 +49,7 @@ export interface RobloxProfile extends Record<string, any> {
  *
  * #### Configuration
  *```ts
- * import { Auth } from "@auth/core"
+ * import { Auth } from "@conductorai/auth-core"
  * import Roblox from "@auth/providers/roblox"
  *
  * const request = new Request(origin)

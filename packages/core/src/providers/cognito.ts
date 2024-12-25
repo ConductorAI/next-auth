@@ -29,8 +29,8 @@ export interface CognitoProfile extends Record<string, any> {
  *
  * #### Configuration
  *```ts
- * import { Auth } from "@auth/core"
- * import Cognito from "@auth/core/providers/cognito"
+ * import { Auth } from "@conductorai/auth-core"
+ * import Cognito from "@conductorai/auth-core/providers/cognito"
  *
  * const request = new Request(origin)
  * const response = await Auth(request, {

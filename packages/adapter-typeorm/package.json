@@ -45,7 +45,7 @@
     "test:sqlite": "pnpm clean && ./test/sqlite/test.sh"
   },
   "dependencies": {
-    "@auth/core": "workspace:*"
+    "@conductorai/auth-core": "workspace:*"
   },
   "devDependencies": {
     "libsql": "^0.3.18",

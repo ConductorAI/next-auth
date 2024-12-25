@@ -29,7 +29,7 @@ import type {
   AdapterSession,
   VerificationToken,
   AdapterAccount,
-} from "@auth/core/adapters"
+} from "@conductorai/auth-core/adapters"
 
 type ToFauna<T> = {
   [P in keyof T]: T[P] extends Date | null

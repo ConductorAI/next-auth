@@ -21,7 +21,7 @@ import {
   type AdapterSession,
   type VerificationToken,
   isDate,
-} from "@auth/core/adapters"
+} from "@conductorai/auth-core/adapters"
 import type { Redis } from "@upstash/redis"
 
 /** This is the interface of the Upstash Redis adapter options. */

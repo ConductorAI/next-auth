@@ -29,7 +29,7 @@
  * @module @auth/xata-adapter
  */
 
-import type { Adapter } from "@auth/core/adapters"
+import type { Adapter } from "@conductorai/auth-core/adapters"
 import type { XataClient } from "./xata.js"
 
 export function XataAdapter(client: XataClient): Adapter {

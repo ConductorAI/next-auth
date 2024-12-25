@@ -3,8 +3,8 @@ import type { RequestEvent } from "@sveltejs/kit"
 import { parse } from "set-cookie-parser"
 import { env } from "$env/dynamic/private"
 
-import { Auth, createActionURL, raw } from "@auth/core"
-import type { ProviderType } from "@auth/core/providers"
+import { Auth, createActionURL, raw } from "@conductorai/auth-core"
+import type { ProviderType } from "@conductorai/auth-core/providers"
 import type { SvelteKitAuthConfig } from "./types"
 import { setEnvDefaults } from "./env"
 

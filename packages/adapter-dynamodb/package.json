@@ -51,6 +51,6 @@
     "@aws-sdk/lib-dynamodb": "^3.36.1"
   },
   "dependencies": {
-    "@auth/core": "workspace:*"
+    "@conductorai/auth-core": "workspace:*"
   }
 }

@@ -20,7 +20,7 @@ import type {
   AdapterUser,
   AdapterAccount,
   AdapterSession,
-} from "@auth/core/adapters"
+} from "@conductorai/auth-core/adapters"
 import { DataSourceOptions, DataSource, EntityManager } from "typeorm"
 import * as defaultEntities from "./entities.js"
 import { parseDataSourceConfig, updateConnectionEntities } from "./utils.js"

@@ -29,7 +29,7 @@ dist
 # Generated files
 .cache-loader
 packages/next-auth/providers
-# copied from @auth/core
+# copied from @conductorai/auth-core
 packages/frameworks-*/**/providers
 packages/*/*.js
 packages/*/*.d.ts
@@ -96,7 +96,7 @@ docs/docs/reference/core
 # Next.js
 packages/next-auth/lib
 packages/next-auth/providers
-# copied from @auth/core
+# copied from @conductorai/auth-core
 packages/next-auth/src/providers
 docs/docs/reference/nextjs
 

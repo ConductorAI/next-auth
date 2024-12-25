@@ -22,8 +22,8 @@ import type { OAuthConfig, OAuthUserConfig } from "./index.js"
  *
  * #### Configuration
  *```ts
- * import { Auth } from "@auth/core"
- * import Osso from "@auth/core/providers/osso"
+ * import { Auth } from "@conductorai/auth-core"
+ * import Osso from "@conductorai/auth-core/providers/osso"
  *
  * const request = new Request(origin)
  * const response = await Auth(request, {

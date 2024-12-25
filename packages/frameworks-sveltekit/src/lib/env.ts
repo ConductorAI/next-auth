@@ -1,4 +1,7 @@
-import { setEnvDefaults as coreSetEnvDefaults, skipCSRFCheck } from "@auth/core"
+import {
+  setEnvDefaults as coreSetEnvDefaults,
+  skipCSRFCheck,
+} from "@conductorai/auth-core"
 import { dev, building } from "$app/environment"
 import { base } from "$app/paths"
 import type { SvelteKitAuthConfig } from "./types"

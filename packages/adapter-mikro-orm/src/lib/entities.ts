@@ -14,7 +14,7 @@ import type {
   AdapterAccount,
   AdapterSession,
   VerificationToken as AdapterVerificationToken,
-} from "@auth/core/adapters"
+} from "@conductorai/auth-core/adapters"
 
 type RemoveIndex<T> = {
   // eslint-disable-next-line

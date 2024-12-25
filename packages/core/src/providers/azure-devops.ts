@@ -65,7 +65,7 @@ export interface AzureDevOpsProfile extends Record<string, any> {
  * ## Example
  *
  * ```ts
- * import AzureDevOps from "@auth/core/providers/azure-devops"
+ * import AzureDevOps from "@conductorai/auth-core/providers/azure-devops"
  * ...
  * providers: [
  *   AzureDevOps({

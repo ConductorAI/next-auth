@@ -283,11 +283,11 @@ import { env } from "$env/dynamic/private"
 import type { SvelteKitAuthConfig } from "./types"
 import { setEnvDefaults } from "./env"
 import { auth, signIn, signOut } from "./actions"
-import { Auth, isAuthAction, customFetch } from "@auth/core"
+import { Auth, isAuthAction, customFetch } from "@conductorai/auth-core"
 import { building } from "$app/environment"
 
 export { customFetch }
-export { AuthError, CredentialsSignin } from "@auth/core/errors"
+export { AuthError, CredentialsSignin } from "@conductorai/auth-core/errors"
 
 export type {
   Account,
@@ -295,7 +295,7 @@ export type {
   Profile,
   Session,
   User,
-} from "@auth/core/types"
+} from "@conductorai/auth-core/types"
 
 export type { SvelteKitAuthConfig }
 
